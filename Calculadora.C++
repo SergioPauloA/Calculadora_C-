@@ -1,0 +1,44 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  float num1, num2, resultado;
+  int operador;
+
+  cout << "Digite o primeiro número: ";
+  cin >> num1;
+
+  cout << "Selecione o operador:\n";
+  cout << "1 - Adição\n";
+  cout << "2 - Subtração\n";
+  cout << "3 - Multiplicação\n";
+  cout << "4 - Divisão\n"
+  cin >> operador;
+
+  switch (operador) {
+    case 1:
+      resultado = num1 + num2;
+      cout << "Resultado: " << resultado << endl;
+      break;
+    case 2:
+      resultado = num1 - num2;
+      cout << "Resultado: " << resultado << endl;
+      break;
+    case 3:
+      resultado = num1 * num2;
+      cout << "Resultado: " << resultado << endl;
+      break;
+    case 4:
+      resultado = num1 / num2;
+      cout << "Resultado: " << resultado << endl;
+  } else {
+      cout << "Divisão por zero não é permitida." << endl;
+  }
+  break;
+default:
+  cout << "Operador inválido." << endl;
+  break;
+}
+return 0;
+}
